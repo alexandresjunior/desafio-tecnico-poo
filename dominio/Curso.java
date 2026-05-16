@@ -1,5 +1,6 @@
 package dominio;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import enums.Modalidade;
@@ -9,6 +10,7 @@ public class Curso {
     private Professor professorResponsavel;
     private List<Aluno> alunos;
     private Modalidade modalidade;
+    ArrayList<String> teste = new ArrayList<>();
 
     public Curso(String nome, Professor professorResponsavel, List<Aluno> alunos, Modalidade modalidade) {
         this.nome = nome;
@@ -41,13 +43,13 @@ public class Curso {
         this.alunos = alunos;
     }
 
-    public void adicionarAluno(Aluno aluno){
-        
+    public void adicionarAluno(Aluno aluno) {
+        alunos.add(aluno);
     }
 
-    public void listarAluno(){
+    public void listarAluno() {
         for (Aluno aluno : alunos) {
-            System.out.println(aluno);
+            aluno.exibirDetalhes();
         }
     }
 
