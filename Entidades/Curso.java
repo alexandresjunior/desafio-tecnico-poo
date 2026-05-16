@@ -55,9 +55,12 @@ public class Curso {
 }
 
 public void listarAlunos() {
-    System.out.println("Alunos do curso: " + nome);
-    for (Aluno aluno : alunos) {
-        aluno.exibirDetalhes();
+    if (alunos != null) {
+        for (Aluno aluno : alunos) {
+            aluno.exibirDetalhes();
+        }
+    } else {
+        System.out.println("Nenhum aluno matriculado.");
     }
 }
     
