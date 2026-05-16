@@ -21,6 +21,7 @@ public class Curso {
     this.nome = nome;
     this.modalidade = modalidade;
     this.professorResponsavel = professorResponsavel;
+    this.alunos = new ArrayList<>();
   }
 
   // Métodos da classe
@@ -66,6 +67,6 @@ public class Curso {
   }
 
   public void listarAlunos() {
-    
+
   }
 }
