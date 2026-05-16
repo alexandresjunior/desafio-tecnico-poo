@@ -1,5 +1,5 @@
  package entidade; 
- public abstract class Pessoa {
+ public abstract class Pessoa  {
     private String nome;
     private String email;
     private Endereco Endereco;
@@ -7,10 +7,10 @@
     public Pessoa() {
     }
 
-    public Pessoa(String nome, String email, Endereco endereco) {
+    public Pessoa(String nome, String email ,String rua, String cidade, String cep) {
         this.nome = nome;
         this.email = email;
-        Endereco = endereco;
+
     }
 
     public String getNome() {
