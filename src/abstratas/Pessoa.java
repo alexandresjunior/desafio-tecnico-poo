@@ -39,13 +39,8 @@ public abstract class Pessoa extends Endereco {
         this.endereço = endereço;
     }
 
-    public void exibirDetalhesPessoa() {
-        System.out.println("-----DADOS DA PESSOA-----");
-        System.out.println("Nome: " + nome);
-        System.out.println("Email: " + email);
-        System.out.println("Rua: " + endereço.getRua());
-        System.out.println("Cidade: " + endereço.getCidade());
-        System.out.println("CEP: " + endereço.getCep());
+    public void exibirDetalhes() {
+
     }
     
 }

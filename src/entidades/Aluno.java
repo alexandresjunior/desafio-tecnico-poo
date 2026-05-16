@@ -19,9 +19,9 @@ public class Aluno extends Pessoa {
         this.matricula = matricula;
     }
 
-    public void exibirDetalhesAluno() {
-        super.exibirDetalhesPessoa();
-        System.out.println("-----DADOS DO ALUNO-----");
-        System.out.println("Matrícula: " + matricula);
+    @Override
+    public void exibirDetalhes() {
+    System.out.println("Aluno logado com sucesso!");
     }
+
 }

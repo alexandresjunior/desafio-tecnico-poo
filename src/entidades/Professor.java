@@ -30,11 +30,9 @@ public class Professor extends Pessoa {
         this.salario = salario;
     }
     
-    public void exibirDetalhesProfessor() {
-        super.exibirDetalhesPessoa();
-        System.out.println("-----DADOS DO PROFESSOR-----");
-        System.out.println("Especialide: " + especialidade);
-        System.out.println("Salário: R$" + salario);
+    @Override
+    public void exibirDetalhes() {
+        System.out.println("Professor logado com sucesso!");
     }
 
 }
