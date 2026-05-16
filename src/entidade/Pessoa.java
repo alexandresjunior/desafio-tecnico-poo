@@ -2,7 +2,7 @@
  public abstract class Pessoa {
     private String nome;
     private String email;
-    Endereco Endereco;
+    private Endereco Endereco;
 
     public Pessoa() {
     }
@@ -38,7 +38,12 @@
     }
 
     public void ExibirDetalhes() {
-
+        System.out.println("----------DADOS--------");
+        System.out.println("Nome: " + nome);
+        System.out.println("Email: " + email);
+        System.out.println("Rua: " + Endereco.getRua() );
+        System.out.println("Cidade: " + Endereco.getCidade());
+        System.out.println("Cep: " + Endereco.getCep());
     }
 
 }

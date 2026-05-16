@@ -1,14 +1,28 @@
 package entidade;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import enuns.Modalidade;
 
 public class Curso {
     private String nome;
-    Modalidade modalidade;
-    Professor professorResponsavel;
-    list<Aluno> alunos;
+    private Modalidade modalidade;
+    private Professor professorResponsavel;
+    private List<Aluno> alunos;
 
     
+    public Curso() {
+        alunos = new ArrayList<>();
+    }
+
+    public Curso(String nome, Modalidade modalidade, Professor professorResponsavel, List<Aluno> alunos) {
+        this.nome = nome;
+        this.modalidade = modalidade;
+        this.professorResponsavel = professorResponsavel;
+        this.alunos = alunos;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -33,12 +47,26 @@ public class Curso {
         this.professorResponsavel = professorResponsavel;
     }
 
-    public list<Aluno> getAlunos() {
+    public List<Aluno> getAlunos() {
         return alunos;
     }
 
-    public void setAlunos(list<Aluno> alunos) {
+    public void setAlunos(List<Aluno> alunos) {
         this.alunos = alunos;
     }
 
+    public void adiocionarAluno(Aluno aluno){
+       if (alunos != null) {
+        alunos.add(aluno);
+       } else {
+        System.out.println("Não é possivel adicionar aluno em uma lista NULL");
+        
+       }
+    }
+    public void listarAlunos(){
+
+        for (Aluno aluno : alunos) {
+            System.out.println("Nome: " + aluno.getNome());
+        }
+    }
 }
