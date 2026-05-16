@@ -1,15 +1,7 @@
 package Entidades;
 
-//import Interfaces.autenticacao;
-
 public class Aluno extends Pessoa {
     private String matricula;
-
-   // @Override
-    //public void realizarLogin() {
-      //  System.out.println("Aluno Logado com Sucesso!");
-       // return true;
-    //}
 
     public Aluno(String matricula) {
         this.matricula = matricula;
@@ -26,12 +18,12 @@ public class Aluno extends Pessoa {
 
     public void setMatricula(String matricula) {
         this.matricula = matricula;
-        }
-        
-        @Override
-        public void exibirDetalhes() {
-            System.out.println("Aluno:" + getNome());
-            System.out.println("Email:" + getEmail());
-            System.out.println("Matricula" + getMatricula());
+    }
+
+    @Override
+    public void exibirDetalhes() {
+        System.out.println("Aluno:" + getNome());
+        System.out.println("Email:" + getEmail());
+        System.out.println("Matricula" + getMatricula());
     }
 }

@@ -4,8 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Enums.Modalidade;
+import Interfaces.CursoInterface;
 
-public class Curso {
+public class Curso implements CursoInterface {
     private String nome;
     private Modalidade modalidade;
     private Professor professorResponsavel;
@@ -57,8 +58,6 @@ public class Curso {
         this.alunos = alunos;
     }
 
-    // private List<Aluno> alunos = new ArrayList<>();
-
     public void adicionarAluno(Aluno aluno) {
         if (this.alunos != null) {
             this.alunos.add(aluno);
@@ -68,7 +67,8 @@ public class Curso {
 
     }
 
-    public void ListarAlunos() {
+    @Override
+    public void listarAlunos() {
         System.out.println("-----Lista de Alunos-----");
         for (Aluno aluno : alunos) {
             System.out.println("--Nome:" + aluno.getNome());
