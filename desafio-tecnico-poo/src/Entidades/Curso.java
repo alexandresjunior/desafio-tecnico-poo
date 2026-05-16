@@ -1,5 +1,5 @@
-package Modelo;
-import Enum.Modalidade;
+package Entidades;
+import Enums.Modalidade;
 
 public class Curso {
     private String nome;

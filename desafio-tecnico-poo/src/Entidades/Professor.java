@@ -1,4 +1,4 @@
-package Modelo;
+package Entidades;
 
 //import Autenticacao.autenticacao;
 

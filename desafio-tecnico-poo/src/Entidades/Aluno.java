@@ -1,4 +1,4 @@
-package Modelo;
+package Entidades;
 
 public class Aluno {
     private String matricula;
