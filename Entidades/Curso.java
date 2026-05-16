@@ -1,19 +1,21 @@
 package entidades;
+import java.util.ArrayList;
 import java.util.List;
+import enums.Modalidade;
 
 public class Curso {
     private String nome;
-    private modalidade modalidade;
+    private Modalidade modalidade;
     private Professor professor;
     private List<Aluno> alunos;
     
     public Curso() {}
 
-    public Curso(String nome, modalidade modalidade, Professor professor, List<Aluno> alunos) {
+    public Curso(String nome, Modalidade modalidade, Professor professor) {
         this.nome = nome;
         this.modalidade = modalidade;
         this.professor = professor;
-        this.alunos = alunos;
+        this.alunos = new ArrayList<>();
     }
 
     public String getNome() {
@@ -24,11 +26,11 @@ public class Curso {
         this.nome = nome;
     }
 
-    public modalidade getModalidade() {
+    public Modalidade getModalidade() {
         return modalidade;
     }
 
-    public void setModalidade(modalidade modalidade) {
+    public void setModalidade(Modalidade modalidade) {
         this.modalidade = modalidade;
     }
 
@@ -48,5 +50,15 @@ public class Curso {
         this.alunos = alunos;
     }
 
+    public void adicionarAluno(Aluno aluno) {
+    this.alunos.add(aluno);
+}
+
+public void listarAlunos() {
+    System.out.println("Alunos do curso: " + nome);
+    for (Aluno aluno : alunos) {
+        aluno.exibirDetalhes();
+    }
+}
     
 }

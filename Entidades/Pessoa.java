@@ -1,4 +1,5 @@
 package entidades;
+import entidades.Endereco;
 public abstract class Pessoa {
     private String nome;
     private String email;
@@ -36,14 +37,5 @@ public abstract class Pessoa {
         this.endereco = endereco;
     }
 
-    public void exibirDetalhes() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Email: " + email);
-        if (endereco != null) {
-            System.out.println("Endereço:");
-            System.out.println("  Rua: " + endereco.getRua());
-            System.out.println("  Cidade: " + endereco.getCidade());
-            System.out.println("  CEP: " + endereco.getCep());
-        }
-    }
+    public abstract void exibirDetalhes();
 }
