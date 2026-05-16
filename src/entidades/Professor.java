@@ -1,15 +1,15 @@
 package entidades;
 
 import abstratas.Pessoa;
+import interfaces.Autenticavel;
 
-public class Professor extends Pessoa {
-    
+public class Professor extends Pessoa implements Autenticavel {
+
     private String especialidade;
     private double salario;
 
-    public Professor(String rua, String cidade, String cep, String nome, String email, Endereco endereço, 
-        String especialidade, double salario) {
-        super(rua, cidade, cep, nome, email, endereço);
+    public Professor(String nome, String email, Endereco endereço, String especialidade, double salario) {
+        super(nome, email, endereço);
         this.especialidade = especialidade;
         this.salario = salario;
     }
@@ -29,10 +29,17 @@ public class Professor extends Pessoa {
     public void setSalario(double salario) {
         this.salario = salario;
     }
-    
+
     @Override
     public void exibirDetalhes() {
-        System.out.println("Professor logado com sucesso!");
+        System.out.println("Detalhes do professor: ");
+        System.out.println("Nome: " + this.getNome());
+        System.out.println("Email: " + this.getEmail());
+        System.out.println("Especialidade: " + especialidade);
+    }
+
+    public boolean realizarLogin() {
+        return true;
     }
 
 }
