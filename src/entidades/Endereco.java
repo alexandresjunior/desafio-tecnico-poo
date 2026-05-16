@@ -1,8 +1,6 @@
 package entidades;
 
-import abistratas.Pessoa;
-
-public public class Endereco {
+public class Endereco {
     private String rua;
     private String cidade;
     private String cep;

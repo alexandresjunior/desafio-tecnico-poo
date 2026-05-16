@@ -1,8 +1,9 @@
 package entidades;
 
 import abistratas.Pessoa;
+import interfaces.Autenticavel;
 
-public class Professor extends Pessoa {
+public class Professor extends Pessoa implements Autenticavel {
     private String especialidade;
     private double salario;
 
@@ -41,5 +42,11 @@ public class Professor extends Pessoa {
         System.out.println("Especialidade: " + especialidade);
         System.out.println("Salário: R$ " + salario);
 
+    }
+
+    @Override
+    public boolean realizarLogin() {
+
+        return true;
     }
 }
