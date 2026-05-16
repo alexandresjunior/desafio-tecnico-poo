@@ -1,3 +1,23 @@
+<<<<<<< HEAD
+## Getting Started
+
+Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+
+## Folder Structure
+
+The workspace contains two folders by default, where:
+
+- `src`: the folder to maintain sources
+- `lib`: the folder to maintain dependencies
+
+Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+
+> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+
+## Dependency Management
+
+The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+=======
 # 💻 Desafio Técnico: Programação Orientada a Objetos com Java
 
 Bem-vindo(a) ao Desafio Prático de POO! 🚀
@@ -144,3 +164,4 @@ git push origin main
 ---
 
 *Boa sorte! O foco deste desafio não é a lógica complexa, mas sim a correta estruturação e o uso adequado dos pilares da POO.* 👨‍💻👩‍💻
+>>>>>>> 7bdf414518007a95d8dc665b2cafc6d8893fd307
