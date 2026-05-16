@@ -12,6 +12,9 @@ public class Aluno extends Pessoa {
         System.out.println("Aluno: " + getNome());
         System.out.println("Email: " + getEmail());
         System.out.println("Matrícula: " + matricula);
+        System.out.println("Rua: " + getEndereco().getRua());
+        System.out.println("Cidade: " + getEndereco().getCidade());
+        System.out.println("CEP: " + getEndereco().getCep());
     }
 
     public String getMatricula() {

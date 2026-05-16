@@ -7,10 +7,9 @@ public class Professor extends Pessoa implements Autenticavel {
     private String especialidade;
     private double salario;
 
-    // construtor
     public Professor(String nome, String email, Endereco endereco,
             String especialidade, double salario) {
-        super(nome, email, endereco); // chama o construtor de Pessoa
+        super(nome, email, endereco);
         this.especialidade = especialidade;
         this.salario = salario;
     }
