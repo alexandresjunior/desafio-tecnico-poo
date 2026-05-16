@@ -1,21 +1,15 @@
 package dominio;
 
-public class Professor extends Pessoa{
-    private String nome;
+import interfaces.Autenticavel;
+
+public class Professor extends Pessoa implements Autenticavel{
+    private String especialidade;
     private double salario;
-    
-    public Professor(String nome, String email, String nome2, double salario) {
-        super(nome, email);
-        nome = nome2;
+
+    public Professor(String nome, String email, Endereco endereco, String especialidade, double salario) {
+        super(nome, email, endereco);
+        this.especialidade = especialidade;
         this.salario = salario;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
 
     public double getSalario() {
@@ -25,9 +19,25 @@ public class Professor extends Pessoa{
     public void setSalario(double salario) {
         this.salario = salario;
     }
-
-    public void exibirDetalhes(){
-        System.out.println("NOME DO PROFESSOR: " + this.nome);
-        System.out.println("SALÁRIO DO PROFESSOR: " + this.salario);
+    @Override
+    public void exibirDetalhes() {
+        super.exibirDetalhes();
+        System.out.println("ESPECIALIDADE: " + this.especialidade);
+        System.out.println("SALÁRIO: " + this.salario);
     }
+
+    @Override
+    public boolean realizarLogin() {
+        return true;
+    }
+
+    public String getEspecialidade() {
+        return especialidade;
+    }
+
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
+    }
+
+    
 }

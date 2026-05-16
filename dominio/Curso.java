@@ -2,12 +2,20 @@ package dominio;
 
 import java.util.List;
 
+import enums.Modalidade;
+
 public class Curso {
     private String nome;
     private Professor professorResponsavel;
     private List<Aluno> alunos;
+    private Modalidade modalidade;
 
-    
+    public Curso(String nome, Professor professorResponsavel, List<Aluno> alunos, Modalidade modalidade) {
+        this.nome = nome;
+        this.professorResponsavel = professorResponsavel;
+        this.alunos = alunos;
+        this.modalidade = modalidade;
+    }
 
     public String getNome() {
         return nome;
@@ -41,5 +49,13 @@ public class Curso {
         for (Aluno aluno : alunos) {
             System.out.println(aluno);
         }
+    }
+
+    public Modalidade getModalidade() {
+        return modalidade;
+    }
+
+    public void setModalidade(Modalidade modalidade) {
+        this.modalidade = modalidade;
     }
 }
