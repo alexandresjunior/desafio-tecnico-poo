@@ -1,4 +1,4 @@
-package Autenticacao;
+package Interfaces;
 
 public interface autenticacao {
     boolean realizarLogin();
