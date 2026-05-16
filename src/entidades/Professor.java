@@ -39,6 +39,7 @@ public class Professor extends Pessoa implements Autenticavel {
     }
 
     public boolean realizarLogin() {
+        System.out.println("Login realizado com sucesso!");
         return true;
     }
 

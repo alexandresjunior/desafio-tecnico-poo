@@ -1,8 +1,9 @@
 package entidades;
 
 import abstratas.Pessoa;
+import interfaces.Autenticavel;
 
-public class Aluno extends Pessoa {
+public class Aluno extends Pessoa implements Autenticavel {
     
     private String matricula;
 
@@ -25,6 +26,12 @@ public class Aluno extends Pessoa {
         System.out.println("Nome: " + this.getNome());
         System.out.println("Email: " + this.getEmail());
         System.out.println("Matricula: " + matricula);
+    }
+
+    @Override
+    public boolean realizarLogin() {
+        System.out.println("Login realizado com sucesso!");
+        return true;
     }
 
 }
