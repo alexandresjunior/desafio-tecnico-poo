@@ -1,4 +1,6 @@
-package Class;
+package entidade;
+
+import enuns.Modalidade;
 
 public class Curso {
     private String nome;

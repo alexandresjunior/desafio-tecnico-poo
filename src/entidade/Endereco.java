@@ -1,4 +1,4 @@
-package Class;
+package entidade;
 
 public class Endereco {
     private String rua;

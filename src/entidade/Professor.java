@@ -1,4 +1,4 @@
-package Class; 
+package entidade; 
 public class Professor extends Pessoa {
     private String especialidade;
     private Double salario;
@@ -28,6 +28,8 @@ public class Professor extends Pessoa {
     }
 
     public void ExibirDetalhes() {
+        System.out.println("especialização" + especialidade );
+        System.out.println("Salario R$:" + salario);
 
     }
 }

@@ -1,4 +1,4 @@
-package Class; 
+package entidade; 
 public class Aluno extends Pessoa {
     private String matricula;
 
@@ -15,6 +15,7 @@ public class Aluno extends Pessoa {
     }
     
     public void ExibirDetalhes(){
+        System.out.println("Matricula: " + matricula);
         
     }
 }

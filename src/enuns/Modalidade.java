@@ -1,4 +1,4 @@
-package Enum;
+package enuns;
 
 public enum Modalidade {
     PRESENCIAL,
