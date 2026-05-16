@@ -1,3 +1,4 @@
+package Class; 
 public class Professor extends Pessoa {
     private String especialidade;
     private Double salario;

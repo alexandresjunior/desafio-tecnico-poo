@@ -1,4 +1,5 @@
-public abstract class Pessoa {
+ package Class; 
+ public abstract class Pessoa {
     private String nome;
     private String email;
     Endereco Endereco;
