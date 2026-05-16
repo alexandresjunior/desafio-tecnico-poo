@@ -1,0 +1,49 @@
+package Entidades;
+public abstract class Pessoa {
+    private String nome;
+    private String email;
+    private Endereco endereco;
+
+    public Pessoa() {}
+
+    public Pessoa(String nome, String email, Endereco endereco) {
+        this.nome = nome;
+        this.email = email;
+        this.endereco = endereco;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
+    public void exibirDetalhes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Email: " + email);
+        if (endereco != null) {
+            System.out.println("Endereço:");
+            System.out.println("  Rua: " + endereco.getRua());
+            System.out.println("  Cidade: " + endereco.getCidade());
+            System.out.println("  CEP: " + endereco.getCep());
+        }
+    }
+}
