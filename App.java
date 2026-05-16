@@ -1,10 +1,8 @@
 import entidades.Aluno;
-import entidades.Curso;      // ← faltava
-import entidades.Endereco;   // ← faltava
-import entidades.Pessoa;
+import entidades.Curso;    
+import entidades.Endereco;  
 import entidades.Professor;
 import enums.Modalidade;
-import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) {
