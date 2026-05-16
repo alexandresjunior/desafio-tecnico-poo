@@ -1,5 +1,5 @@
 package Interfaces;
 
-public interface autenticacao {
+public interface Autenticavel {
     boolean realizarLogin();
 }

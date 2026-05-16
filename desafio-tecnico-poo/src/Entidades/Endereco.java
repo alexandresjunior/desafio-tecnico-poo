@@ -5,8 +5,7 @@ public class Endereco {
     private String cidade;
     private String cep;
 
-    public Endereco() {
-    }
+    public Endereco() {}
 
     public Endereco(String rua, String cidade, String cep) {
         this.rua = rua;

@@ -9,6 +9,11 @@ public class Curso {
     private String nome;
     private Modalidade modalidade;
     private Professor professorResponsavel;
+    private List<Aluno> alunos;
+
+    public Curso(List<Aluno> alunos) {
+        this.alunos = alunos;
+    }
 
     public Curso() {
     }
@@ -52,15 +57,21 @@ public class Curso {
         this.alunos = alunos;
     }
 
-    private List<Aluno> alunos = new ArrayList<>();
+    // private List<Aluno> alunos = new ArrayList<>();
 
     public void adicionarAluno(Aluno aluno) {
-        alunos.add(aluno);
+        if (this.alunos != null) {
+            this.alunos.add(aluno);
+        } else {
+            System.out.println("Não foi possivel adicionar aluno numa lista NULL.");
+        }
+
     }
 
     public void ListarAlunos() {
+        System.out.println("-----Lista de Alunos-----");
         for (Aluno aluno : alunos) {
-            aluno.exibirdetalhes();
+            System.out.println("--Nome:" + aluno.getNome());
         }
 
     }

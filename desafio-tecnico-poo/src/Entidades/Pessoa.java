@@ -5,7 +5,7 @@ public abstract class Pessoa {
     private String email;
     private Endereco endereco;
 
-    public abstract void exibirdetalhes();
+    public abstract void exibirDetalhes();
 
     public Pessoa() {
     }
@@ -39,5 +39,6 @@ public abstract class Pessoa {
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
     }
+    
 
 }
