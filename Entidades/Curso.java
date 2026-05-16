@@ -1,4 +1,4 @@
-package Entidades;
+package entidades;
 import java.util.List;
 
 public class Curso {

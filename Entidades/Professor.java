@@ -1,4 +1,4 @@
-package Entidades;
+package entidades;
 public class Professor {
     private String name;
     private Double salario;
