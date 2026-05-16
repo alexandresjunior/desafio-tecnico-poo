@@ -23,7 +23,7 @@ public class TestDesafio01 {
 
         curso.adicionarAluno(aluno1);
         curso.adicionarAluno(aluno2);
-        curso.listarAluno();
+        curso.listarAlunos();
         professor.exibirDetalhes();
 
     }
