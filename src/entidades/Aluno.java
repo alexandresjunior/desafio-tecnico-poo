@@ -7,8 +7,8 @@ public class Aluno extends Pessoa implements Autenticavel {
     
     private String matricula;
 
-    public Aluno(String nome, String email, Endereco endereço, String marticula) {
-        super(nome, email, endereço);
+    public Aluno(String nome, String email, String rua, String cidade, String cep, String marticula) {
+        super(nome, email, rua, cidade, cep);
         this.matricula = marticula;
     }
 

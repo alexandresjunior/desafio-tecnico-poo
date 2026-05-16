@@ -8,8 +8,8 @@ public class Professor extends Pessoa implements Autenticavel {
     private String especialidade;
     private double salario;
 
-    public Professor(String nome, String email, Endereco endereço, String especialidade, double salario) {
-        super(nome, email, endereço);
+    public Professor(String nome, String email, String rua, String cidade, String cep, String especialidade, double salario) {
+        super(nome, email, rua, cidade, cep);
         this.especialidade = especialidade;
         this.salario = salario;
     }

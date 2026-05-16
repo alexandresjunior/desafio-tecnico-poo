@@ -2,16 +2,14 @@ package abstratas;
 
 import entidades.Endereco;
 
-public abstract class Pessoa {
+public abstract class Pessoa extends Endereco {
     
     private String nome;
     private String email;
-    private Endereco endereço;
     
-    public Pessoa(String nome, String email, Endereco endereço) {
+    public Pessoa(String nome, String email, String rua, String cidade, String cep) {
         this.nome = nome;
         this.email = email;
-        this.endereço = endereço;
     }
 
     public String getNome() {
@@ -28,14 +26,6 @@ public abstract class Pessoa {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public Endereco getEndereço() {
-        return endereço;
-    }
-
-    public void setEndereço(Endereco endereço) {
-        this.endereço = endereço;
     }
 
     public void exibirDetalhes() {
