@@ -1,6 +1,8 @@
 package entidades;
+
 import abistratas.Pessoa;
-public class Aluno extends Pessoa{
+
+public class Aluno extends Pessoa {
 
     private String matricula;
 
@@ -16,14 +18,22 @@ public class Aluno extends Pessoa{
         super(nome, email, endereco);
         this.matricula = matricula;
     }
-@Override
-public void exibirDetalhes(){
-    System.out.println("Detalher do aluno.");
-    System.out.println("nome ." + this.getNome());
-    System.out.println("Email: " + this.getEmail());
-    System.out.println("Matricula:" + matricula);
-@Override
 
-
-   
+    public String getMatricula() {
+        return matricula;
     }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    @Override
+    public void exibirDetalhes() {
+        System.out.println("Detalher do aluno.");
+        System.out.println("nome ." + this.getNome());
+        System.out.println("Email: " + this.getEmail());
+        System.out.println("Matricula:" + matricula);
+
+    }
+
+}
